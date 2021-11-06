@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <style>
+            .box {
+                width:200px;
+                height:200px;
+                background-color: red;
+                transition: background-color 60s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" style="background-color:black;"></div>
+        <br>
+        <button onclick="func()">click</button>
+        <script>
+        function func() {
+            document.getElementsByClassName('box')[0].style = "background-color:green;";
+        }
+        </script>
+    </body>
+</html>
